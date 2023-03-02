@@ -5,6 +5,15 @@ import {AiFillTwitterCircle , AiFillLinkedin, AiFillYoutube} from 'react-icons/a
 
 import Image from 'next/image'
 import deved from '../public/dev-ed-wave.png'
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
+import web1 from '../public/web1.png'
+import web2 from '../public/web2.png'
+import web3 from '../public/web3.png'
+import web4 from '../public/web4.png'
+import web5 from '../public/web5.png'
+import web6 from '../public/web6.png'
 
 export default function Home() {
   return (
@@ -13,7 +22,8 @@ export default function Home() {
         <title>Ricardo Amorim Portfolio</title>
         <link rel='icon' href='/favicon.ico'></link>
       </Head>
-      <main className='bg-white px-10'>
+      
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
         <section className='h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl'>Ricardo Amorim</h1>
@@ -23,9 +33,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Ricardo Amorim</h2>
-            <h3 className='text-2xl py-2'>Developer and designer.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>A student learning front-end development y himself. Join me down below and let's work together!</p>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium  md:text-6xl'>Ricardo</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Developer and designer.</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>A student learning front-end development by himself. Join me down below and let's work together!</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle/>
@@ -36,6 +46,86 @@ export default function Home() {
             <Image src={deved} layout='fill' objectFit='cover'/>
           </div>
         </section>
+        
+        <section>
+          <div>
+            <h3 className='text-3xl py1 mt-20'>Services I offer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Since the beginning of my journey as a developer,
+              i've done remote work for <span className='text-teal-500'>agencies</span>
+              consulted for <span className='text-teal-500'>startups</span> and collaborated with talented 
+              people to create digital products for both business and consumer use.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I offer from a wide range of services, including programming and teaching.
+            </p>
+            <div>
+              <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+                <Image className='mx-auto' src={design} width={100} height={100}></Image>
+                <h3 className='text-lg font-medium pt-8 pb-2'>Beaultiful Designs.</h3>
+                <p>Creating elegant designs suited for your needs following core design teory</p>
+                <h4 className='py-4 text-teal-600'>Design tools i use</h4>
+                <p className='text-gray-800 py-1'>Photoshop</p>
+                <p className='text-gray-800 py-1'>Illustrator</p>
+                <p className='text-gray-800 py-1'>Figma</p>
+              </div>
+              
+              <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+                <Image className='mx-auto' src={code} width={100} height={100}></Image>
+                <h3 className='text-lg font-medium pt-8 pb-2'>Beaultiful Designs.</h3>
+                <p>Creating elegant designs suited for your needs following core design teory</p>
+                <h4 className='py-4 text-teal-600'>Design tools i use</h4>
+                <p className='text-gray-800 py-1'>Photoshop</p>
+                <p className='text-gray-800 py-1'>Illustrator</p>
+                <p className='text-gray-800 py-1'>Figma</p>
+              </div>
+
+              <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+                <Image className='mx-auto' src={consulting} width={100} height={100}></Image>
+                <h3 className='text-lg font-medium pt-8 pb-2'>Beaultiful Designs.</h3>
+                <p>Creating elegant designs suited for your needs following core design teory</p>
+                <h4 className='py-4 text-teal-600'>Design tools i use</h4>
+                <p className='text-gray-800 py-1'>Photoshop</p>
+                <p className='text-gray-800 py-1'>Illustrator</p>
+                <p className='text-gray-800 py-1'>Figma</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-2'>Portfolio</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Since the beginning of my journey as a developer,
+              i've done remote work for <span className='text-teal-500'>agencies</span>
+              consulted for <span className='text-teal-500'>startups</span> and collaborated with talented 
+              people to create digital products for both business and consumer use.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I offer from a wide range of services, including programming and teaching.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src={web1}></Image>
+            </div>
+            <div>
+              <Image src={web2}></Image>
+            </div>
+            <div>
+              <Image src={web3}></Image>
+            </div>
+            <div>
+              <Image src={web4}></Image>
+            </div>
+            <div>
+              <Image src={web5}></Image>
+            </div>
+            <div>
+              <Image src={web6}></Image>
+            </div>
+          </div>
+        </section>
+
       </main>
     </div>
   )
